@@ -92,13 +92,13 @@ public class Main {
 
         switch (choice) {
             case 'a':
-                subsets.sort(Comparator.comparing(s -> s.stream().map(Product::getName).reduce("", String::concat)));
+                SubsetSorter.sortByProductName(subsets);
                 break;
             case 'b':
-                subsets.sort(Comparator.comparing(s -> s.stream().mapToDouble(Product::getWeight).sum()));
+                SubsetSorter.sortByWeightAscending(subsets);
                 break;
             case 'c':
-                subsets.sort(Comparator.comparing(s -> s.stream().mapToInt(Product::getAmount).sum()));
+                SubsetSorter.sortByTotalAmount(subsets);
                 break;
             default:
                 System.out.println("Invalid choice.");

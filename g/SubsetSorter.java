@@ -2,7 +2,7 @@ package g;
 import java.util.*;
 //Problem #2 : Sorting
 
-public class SubsetSorter {
+class SubsetSorter {
 
     public static void sortByProductName(List<List<Product>> subsets) {
         selectionSort(subsets, Comparator.comparing(s -> s.stream().map(Product::getName).reduce("", String::concat)));

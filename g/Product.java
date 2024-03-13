@@ -1,4 +1,5 @@
 package g;
+
 class Product {
     String name;
     double weight;
@@ -10,8 +11,6 @@ class Product {
         this.amount = amount;
     }
 
-    // setter and getter for Sorting of Subsets
-    
     public String getName() {
         return name;
     }
