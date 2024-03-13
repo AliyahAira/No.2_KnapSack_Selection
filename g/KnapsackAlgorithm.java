@@ -1,7 +1,7 @@
 package g;
 
 import java.util.*;
-//Problem#1 : Si Knapsack 
+//Problem#1 : Si Knapsack to
 
 public class KnapsackAlgorithm {
 
