@@ -1,22 +1,25 @@
+package g;
 class Product {
-    private String name;
-    private int weight;
-    private int amount;
-    
-    public Product(String name, int weight, int amount) {
+    String name;
+    double weight;
+    int amount;
+
+    public Product(String name, double weight, int amount) {
         this.name = name;
         this.weight = weight;
         this.amount = amount;
     }
+
+    // setter and getter for Sorting of Subsets
     
     public String getName() {
         return name;
     }
-    
-    public int getWeight() {
+
+    public double getWeight() {
         return weight;
     }
-    
+
     public int getAmount() {
         return amount;
     }
